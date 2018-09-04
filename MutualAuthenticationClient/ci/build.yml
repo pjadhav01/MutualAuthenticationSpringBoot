@@ -8,5 +8,8 @@ image_resource:
 inputs:
 - name: repo
 
+before_install:
+- chmod +x build.sh
+
 run:
   path: repo/MutualAuthenticationClient/ci/build.sh
