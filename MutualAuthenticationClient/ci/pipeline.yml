@@ -14,4 +14,4 @@ jobs:
   - get: resource-tutorial
     trigger: true
   - task: web-app-tests
-    file: resource-tutorial/ci/build.yml
+    file: resource-tutorial/MutualAuthenticationClient/ci/build.yml
