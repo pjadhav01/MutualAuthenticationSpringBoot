@@ -1,9 +1,9 @@
 ---
 resources:
-- name: Downloads/template-spring-boot-master-3
+- name: MutualAuthenticationClient
   type: git
   source:
-    uri: https://github.com/pjadhav01/SpringBootTemplate.git
+    uri: https://github.com/pjadhav01/MutualAuthenticationSpringBoot.git
 
   
 
@@ -11,7 +11,7 @@ jobs:
 - name: job-test-app
   public: true
   plan:
-  - get: Downloads/template-spring-boot-master-3
+  - get: MutualAuthenticationClient
     trigger: true
   - task: web-app-tests
-    file: resource-tutorial/ci/build.yml
+    file: MutualAuthenticationClient/ci/build.yml
