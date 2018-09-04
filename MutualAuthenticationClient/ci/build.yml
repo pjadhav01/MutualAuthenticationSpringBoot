@@ -6,7 +6,7 @@ image_resource:
   source: {repository: java, tag: openjdk-8}
 
 inputs:
-- name: resource-tutorial
+- name: repo
 
 run:
-  path: resource-tutorial/MutualAuthenticationClient/ci/build.sh
+  path: repo/MutualAuthenticationClient/ci/build.sh
