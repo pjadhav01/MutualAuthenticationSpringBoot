@@ -1,5 +1,5 @@
 #!/bin/bash
 
 export TERM=${TERM:-dumb}
-cd MutualAuthenticationClient
+cd resource-tutorial
 ./gradlew --no-daemon build
