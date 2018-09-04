@@ -9,4 +9,4 @@ inputs:
 - name: resource-tutorial
 
 run:
-  path: resource-tutorial/ci/build.sh
+  path: resource-tutorial/MutualAuthenticationClient/ci/build.sh
