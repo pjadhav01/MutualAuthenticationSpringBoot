@@ -1,6 +1,6 @@
 ---
 resources:
-- name: MutualAuthenticationClient
+- name: resource-tutorial
   type: git
   source:
     uri: https://github.com/pjadhav01/MutualAuthenticationSpringBoot.git
@@ -11,7 +11,7 @@ jobs:
 - name: job-test-app
   public: true
   plan:
-  - get: MutualAuthenticationClient
+  - get: resource-tutorial
     trigger: true
   - task: web-app-tests
-    file: MutualAuthenticationClient/ci/build.yml
+    file: resource-tutorial/ci/build.yml
