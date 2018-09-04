@@ -1,0 +1,17 @@
+---
+resources:
+- name: Downloads/template-spring-boot-master-3
+  type: git
+  source:
+    uri: https://github.com/pjadhav01/SpringBootTemplate.git
+
+  
+
+jobs:
+- name: job-test-app
+  public: true
+  plan:
+  - get: Downloads/template-spring-boot-master-3
+    trigger: true
+  - task: web-app-tests
+    file: resource-tutorial/ci/build.yml
